@@ -1,5 +1,5 @@
 # Importing classes
-import Speler-Naam
+import speler-naam
 import os
 
 class Highscore:
@@ -36,5 +36,10 @@ class Highscore:
         for naam, score in self.scores:
             print(f"{naam}: {score}")
 
-spelerNaam = input("Voer je naam in: ")
-speler = Speler-Naam.getNaam()
+spelerNaam = speler.SpelerNaam(input("wat is jou naam: "))
+speler = spelerNaam.get_naam()
+
+highscore = Highscore('highscores.json')
+
+def score(moelijkheid, maxPogingen, Pogingen):
+    pass
